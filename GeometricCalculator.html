@@ -1,0 +1,123 @@
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <link rel="stylesheet" href="GeometricCalculator.css">
+</head>
+
+<title> Geometric Calculator </title>
+
+<body background = "background.jpg">
+<script type='text/javascript'>
+function Square() {
+      document.body.background="square.png";
+      var side=prompt("Please enter side","1");
+      var area=side*side;
+      var perimeter=4*side;
+      if(area!=null){
+        document.getElementById("squ").innerHTML="Area="+area;
+      }
+      if(perimeter!=null){
+        document.getElementById("square").innerHTML="Perimeter="+perimeter;
+      }
+}
+
+function Triangle() {
+      document.body.background="triangle.png";
+      var base= prompt("Please enter base","1");
+      var height=prompt("Please enter height","1");
+      var area=0.5*base*height;
+      if(area!=null){
+          document.getElementById("tri").innerHTML="Area= "+ area;
+      }
+}
+function Circle() {
+        document.body.background="circle.png";
+        var radius= prompt("Please enter radius","1");
+        var area=3.14*radius*radius;
+        var perimeter=2*3.14*radius;
+        if(area!=null){
+            document.getElementById("cir").innerHTML="Area= "+ area;
+        }
+        if(perimeter!=null){
+          document.getElementById("circ").innerHTML="Perimeter"+perimeter;
+        }
+
+}
+function Rectangle() {
+        document.body.background="rectangle.png";
+        var length= prompt("Please enter length","1");
+        var breadth= prompt("Please enter breadth","1");
+        var area=length*breadth;
+        var perimeter=2*(length+breadth);
+        if(area!=null){
+            document.getElementById("rectang").innerHTML="Area= "+ area;
+        }
+        if(perimeter!=null){
+          document.getElementById("rectangle").innerHTML="Perimeter"+perimeter;
+        }
+}
+function Hexagon() {
+        document.body.background="hexagon.png";
+        var side= prompt("Please enter side of Hexagon","1");
+        var area=(6*1.732*s*s)/4;
+        var perimeter=6*a;
+        if(area!=null){
+            document.getElementById("hex").innerHTML="Area= "+ area;
+        }
+        if(perimeter!=null){
+          document.getElementById("hex1").innerHTML="Perimeter"+perimeter;
+        }
+}
+
+
+  </script>
+
+  <header class="heading">
+      <h1> GEOMETRIC CALCULATOR </h1>
+  </header>
+
+  <nav>
+      <p>
+        <button type="button" onclick="Circle()"> CIRCLE </button>
+        <div id="cir"> </div>
+        <div id="circ"></div>
+
+        </br>
+      </p>
+      </br> </br>
+      <p>
+          <form>
+              <button type="button" onclick="javascript:Triangle()"> TRIANGLE </button>
+                  <div id="tri">
+                  </div>
+          </form>
+      </p>
+      </br> </br>
+      <p>
+        <form>
+          <button type="button" onclick="Square()"> SQUARE </button>
+          <div id="squ"></div>
+          <div id="square"></div>
+        </form>
+        </br>
+      </p>
+      </br> </br>
+      <p>
+      <form>
+        <button type="button" onclick="Rectangle()"> RECTANGLE </button>
+        <div id="rectang"></div>
+        <div id="rectangle"></div>
+      </form>
+      </p>
+      </br> </br>
+      <p>
+        <form>
+          <button type="button" onclick="Hexagon()"> HEXAGON </button>
+          <div id="hex"></div>
+          <div id="hex1"></div>
+        </form>
+      </p>
+
+  </nav>
+</body>
